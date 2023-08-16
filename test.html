@@ -11472,7 +11472,7 @@
                             emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
                             emissiveMap: OOOO0
                         })
-                    } t.prototype.buildCarbonMaterial = function() {
+                    }, t.prototype.buildCarbonMaterial = function() {
                     return this.material = new THREE.MeshPhongMaterial({
                         map: l00O1,
                         bumpMap: l00O1,
@@ -17633,11 +17633,7 @@
                         for (l = t.createLinearGradient(0, 0, 0, i), l.addColorStop(0, "#333"), l.addColorStop(.1, "#888"), n = o = 0, u = h - 1; o <= u; n = o += 1) l.addColorStop((n + .5) / h, "#000"), l.addColorStop(Math.min(1, (n + 1.5) / h), "#888");
                         break;
                     case "X27":
-                        s = t.createLinearGradient(0, 0, 0, i),
-                        s.addColorStop(0, "hsla(220,100%,30%)"),
-                        s.addColorStop(.5, "hsla(200,100%,70%)"),
-                        s.addColorStop(.5, "hsla(220,100%,40%)"),
-                        s.addColorStop(1, "hsla(200,100%,70%)");
+                    s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "hsla(220,100%,30%)"), s.addColorStop(.5, "hsla(200,100%,70%)"), s.addColorStop(.5, "hsla(220,100%,40%)"), s.addColorStop(1, "hsla(200,100%,70%)");
                         break;
                     default:
                         s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "#EEE"), s.addColorStop(1, "#666")
