@@ -3903,13 +3903,13 @@
                     this.geometry.getAttribute("color").needsUpdate = !0
                 }, i.prototype.updateLives = function() {
                     var t, e, i, s, l;
-                    return e = 0 === this.lives ? lIIIl.hsvToRgbHex(0, .5, 1) : lIIIl.hsvToRgbHex(this.hue, .2, .9), l = (e >> 16 & 255) / 255, i = (e >> 8 & 255) / 255, t = (255 & e) / 255, s = this.heart_index, this.color[3 * s] = l, this.color[3 * s + 1] = i, this.color[3 * s + 2] = t, this.vertices[3 * s] = .02, this.vertices[3 * s + 1] = .05, this.vertices[3 * s + 2] = this.livesblink ? 1e3 : 0, this.OOOI1[s] = .025, this.figure[s] = 19 + this.lives, this.fill[s] = 1, this.opac[s] = 1, this.geometry.getAttribute("position").needsUpdate = !0, this.geometry.getAttribute("color").needsUpdate = !0
+                    return e = 0 === this.lives ? lIIIl.hsvToRgbHex(0, .5, 1) : lIIIl.hsvToRgbHex(this.hue, 1, 1), l = (e >> 16 & 255) / 255, i = (e >> 8 & 255) / 255, t = (255 & e) / 255, s = this.heart_index, this.color[3 * s] = l, this.color[3 * s + 1] = i, this.color[3 * s + 2] = t, this.vertices[3 * s] = .02, this.vertices[3 * s + 1] = .05, this.vertices[3 * s + 2] = this.livesblink ? 1e3 : 0, this.OOOI1[s] = .025, this.figure[s] = 19 + this.lives, this.fill[s] = 1, this.opac[s] = 1, this.geometry.getAttribute("position").needsUpdate = !0, this.geometry.getAttribute("color").needsUpdate = !0
                 }, i.prototype.updateLevel = function() {
                     var t;
                     return t = this.level_index, this.vertices[3 * t] = .185, this.vertices[3 * t + 1] = .05, this.vertices[3 * t + 2] = 0, this.OOOI1[t] = .02, this.figure[t] = 17, this.fill[t] = 1, this.opac[t] = 1, t = this.level_index + 1, this.vertices[3 * t] = .2, this.vertices[3 * t + 1] = .05, this.vertices[3 * t + 2] = 0, this.OOOI1[t] = .014, this.figure[t] = this.lvl, this.fill[t] = 1, this.opac[t] = 1, this.geometry.getAttribute("figure").needsUpdate = !0
                 }, i.prototype.setHue = function(t) {
                     var e, i, s, l, n, a, o;
-                    for (this.hue = t, i = lIIIl.hsvToRgbHex(this.hue, .2, .9), a = (i >> 16 & 255) / 255, s = (i >> 8 & 255) / 255, e = (255 & i) / 255, l = n = 0, o = this.shield_index - 1; n <= o; l = n += 1) 10 !== l && (this.color[3 * l] = a, this.color[3 * l + 1] = s, this.color[3 * l + 2] = e);
+                    for (this.hue = t, i = lIIIl.hsvToRgbHex(this.hue, 1, 1), a = (i >> 16 & 255) / 255, s = (i >> 8 & 255) / 255, e = (255 & i) / 255, l = n = 0, o = this.shield_index - 1; n <= o; l = n += 1) 10 !== l && (this.color[3 * l] = a, this.color[3 * l + 1] = s, this.color[3 * l + 2] = e);
                     return this.geometry.getAttribute("color").needsUpdate = !0
                 }, i.prototype.hideMouse = function() {
                     return this.vertices[32] = 1e3, this.geometry.getAttribute("position").needsUpdate = !0
@@ -9322,7 +9322,7 @@
                     for (this.geometry.computeBoundingSphere(), this.geometry.computeBoundingBox(), this.geometry.computeFaceNormals(), H = this.quads, O = 0, g = H.length; O < g; O++) M = H[O], r = M[0], h = M[1], r.normal.lengthSq() > 0 && h.normal.lengthSq() > 0 && (r.normal.add(h.normal), r.normal.normalize(), h.normal = r.normal);
                     for (D = this.geometry.faces, w = 0, y = D.length; w < y; w++) o = D[w], o.vertexNormals[0] = o.normal, o.vertexNormals[1] = o.normal, o.vertexNormals[2] = o.normal;
                     if (this.I110l = new THREE.Group, this.I110l.rotation.order = "ZYX", this.O1lO1 = this.O0OlI(), this.O1lOI = new THREE.Mesh(this.geometry, this.O1lO1), this.lO1lO = 0, this.options.propulsion) {
-                        z = new THREE.Geometry, a = lIIIl.II010(this.hue, .5, 1), this.OOI0O = new THREE.MeshBasicMaterial({
+                        z = new THREE.Geometry, a = lIIIl.II010(this.hue, 1, 1), this.OOI0O = new THREE.MeshBasicMaterial({
                             color: new THREE.Color(a[0] / 255, a[1] / 255, a[2] / 255),
                             opacity: 1,
                             map: lII10,
@@ -9387,7 +9387,7 @@
                         return null == t && (t = 10), this.material = new THREE.MeshLambertMaterial({
                             map: l00O1,
                             color: 16777215,
-                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                             emissiveMap: OOOO0
                         })
                     }, t.prototype.buildX27Material = function() {
@@ -9399,7 +9399,7 @@
                             shininess: 30,
                             bumpScale: .1,
                             color: 5275808,
-                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                             emissiveMap: OOOO0
                         })
                     }, t.prototype.buildTestMaterial = function() {
@@ -9423,7 +9423,7 @@
                             shininess: 30,
                             bumpScale: .1,
                             color: 10531008,
-                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                             emissiveMap: OOOO0
                         })
                     }, t.prototype.buildTitaniumMaterial = function() {
@@ -9435,7 +9435,7 @@
                             shininess: 20,
                             bumpScale: .1,
                             color: 6316128,
-                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                             emissiveMap: OOOO0
                         })
                     }, t.prototype.buildCarbonMaterial = function() {
@@ -9446,7 +9446,7 @@
                             shininess: 5,
                             bumpScale: .1,
                             color: 1052688,
-                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                             emissiveMap: lOlll
                         })
                     }, t.prototype.buildFullColorMaterial = function() {
@@ -9459,7 +9459,7 @@
                             shininess: 50,
                             bumpScale: .1,
                             color: t,
-                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                             emissiveMap: OOOO0
                         })
                     }, t.prototype.buildGoldMaterial = function() {
@@ -9471,7 +9471,7 @@
                             shininess: 50,
                             bumpScale: .1,
                             color: 8413232,
-                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                             emissiveMap: OOOO0
                         })
                     }, t.prototype.buildCopperMaterial = function() {
@@ -9483,7 +9483,7 @@
                             shininess: 15,
                             bumpScale: .1,
                             color: 10514512,
-                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                             emissiveMap: OOOO0
                         })
                     }, t.prototype.buildDiamondMaterial = function() {
@@ -9497,12 +9497,12 @@
                             bumpScale: .1,
                             transparent: !0,
                             color: 8421504,
-                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                             emissiveMap: OOOO0
                         })
                     }, t.prototype.l01Il = function(t) {
                         var e, i;
-                        if (this.built_material !== this.finish && (this.O0OlI(this.hue), this.O1lOI.material = this.material), this.options.shield && (this.shield_mesh.visible = !1), this.material.color.setHex(this.base_color), this.invulnerable ? Date.now() % 500 < 250 ? (this.material.emissive.setHex(lIIIl.hsvToRgbHex(this.hue, .5, .5)), this.material.color.setHex(this.dark_color), this.options.shield && (this.shield_mat.color.setHex(lIIIl.hsvToRgbHex(this.hue, .5, 1)), this.shield_mesh.visible = !0)) : (this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, .5, 1)), this.material.color.setHex(this.base_color), this.options.shield && this.shield_mat.color.setHex(0)) : this.lOIl0 > 0 && (this.I110I = Math.random() < this.lOIl0 ? 1 : 0, this.options.shield && (this.shield_mesh.visible = !0), 1 === this.I110I ? (this.material.emissive.setHex(lIIIl.hsvToRgbHex(this.hue, .5, .5)), this.material.color.setHex(this.dark_color), this.options.shield && this.shield_mat.color.setHex(lIIIl.hsvToRgbHex(this.hue, .5, 1))) : (this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, .5, 1)), this.material.color.setHex(this.base_color), this.options.shield && this.shield_mat.color.setHex(0)), this.lOIl0 *= .95, this.lOIl0 < .1 && (this.lOIl0 = 0, this.options.shield && (this.shield_mesh.visible = !1), this.material.color.setHex(this.base_color), this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, .5, 1)))), this.bumping && (t > this.bumpframe + 30 ? (this.bumping = !1, this.I110l.scale.set(2 * this.data.size, 2 * this.data.size, 2 * this.data.size)) : (i = Math.max(0, t - this.bumpframe) / 30, e = 1.5 - Math.cos(Math.pow(i, .5) * (180 * THREE.Math.DEG2RAD) * 2), this.I110l.scale.set(2 * this.data.size * e, 2 * this.data.size * e, 2 * this.data.size * e))), this.last_frame = t, this.bump_shield && this.options.shield) return t > this.bump_shield_frame + 30 ? (this.bump_shield = !1, this.shield_mesh.scale.set(1.2, 1.2, 1.2)) : (i = Math.max(0, t - this.bump_shield_frame) / 30, e = 1.2 - .1 * Math.cos(Math.pow(i, .5) * (180 * THREE.Math.DEG2RAD) * 2), this.shield_mesh.scale.set(e, e, e), this.shield_mat.color.setHex(lIIIl.hsvToRgbHex(this.hue, .5, Math.pow(1 - i, .25))), this.shield_mesh.visible = !0)
+                        if (this.built_material !== this.finish && (this.O0OlI(this.hue), this.O1lOI.material = this.material), this.options.shield && (this.shield_mesh.visible = !1), this.material.color.setHex(this.base_color), this.invulnerable ? Date.now() % 500 < 250 ? (this.material.emissive.setHex(lIIIl.hsvToRgbHex(this.hue, 1, 1)), this.material.color.setHex(this.dark_color), this.options.shield && (this.shield_mat.color.setHex(lIIIl.hsvToRgbHex(this.hue, 1, 1)), this.shield_mesh.visible = !0)) : (this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, 1, 1)), this.material.color.setHex(this.base_color), this.options.shield && this.shield_mat.color.setHex(0)) : this.lOIl0 > 0 && (this.I110I = Math.random() < this.lOIl0 ? 1 : 0, this.options.shield && (this.shield_mesh.visible = !0), 1 === this.I110I ? (this.material.emissive.setHex(lIIIl.hsvToRgbHex(this.hue, 1, 1)), this.material.color.setHex(this.dark_color), this.options.shield && this.shield_mat.color.setHex(lIIIl.hsvToRgbHex(this.hue, 1, 1))) : (this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, 1, 1)), this.material.color.setHex(this.base_color), this.options.shield && this.shield_mat.color.setHex(0)), this.lOIl0 *= .95, this.lOIl0 < .1 && (this.lOIl0 = 0, this.options.shield && (this.shield_mesh.visible = !1), this.material.color.setHex(this.base_color), this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, 1, 1)))), this.bumping && (t > this.bumpframe + 30 ? (this.bumping = !1, this.I110l.scale.set(2 * this.data.size, 2 * this.data.size, 2 * this.data.size)) : (i = Math.max(0, t - this.bumpframe) / 30, e = 1.5 - Math.cos(Math.pow(i, .5) * (180 * THREE.Math.DEG2RAD) * 2), this.I110l.scale.set(2 * this.data.size * e, 2 * this.data.size * e, 2 * this.data.size * e))), this.last_frame = t, this.bump_shield && this.options.shield) return t > this.bump_shield_frame + 30 ? (this.bump_shield = !1, this.shield_mesh.scale.set(1.2, 1.2, 1.2)) : (i = Math.max(0, t - this.bump_shield_frame) / 30, e = 1.2 - .1 * Math.cos(Math.pow(i, .5) * (180 * THREE.Math.DEG2RAD) * 2), this.shield_mesh.scale.set(e, e, e), this.shield_mat.color.setHex(lIIIl.hsvToRgbHex(this.hue, 1, Math.pow(1 - i, .25))), this.shield_mesh.visible = !0)
                     }, t.prototype.bumpShield = function() {
                         if (null != this.last_frame && !this.bump_shield) return this.bump_shield_frame = this.last_frame, this.bump_shield = !0
                     },
@@ -11457,7 +11457,7 @@
                     return null == t && (t = 10), this.material = new THREE.MeshLambertMaterial({
                         map: l00O1,
                         color: 16777215,
-                        emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                        emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                         emissiveMap: OOOO0
                     })
                 }, t.prototype.buildAlloyMaterial = function() {
@@ -11469,7 +11469,7 @@
                         shininess: 30,
                         bumpScale: .1,
                         color: 10531008,
-                        emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                        emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                         emissiveMap: OOOO0
                     })
                 }, t.prototype.buildTitaniumMaterial = function() {
@@ -11481,7 +11481,7 @@
                         shininess: 20,
                         bumpScale: .1,
                         color: 6316128,
-                        emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                        emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                         emissiveMap: OOOO0
                     })
                 }, t.prototype.buildX27Material = function() {
@@ -11493,7 +11493,7 @@
                             shininess: 30,
                             bumpScale: .1,
                             color: 5275808,
-                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                             emissiveMap: OOOO0
                         })
                     }, t.prototype.buildTestMaterial = function() {
@@ -11505,7 +11505,7 @@
                             shininess: 30,
                             bumpScale: .1,
                             color: 16711935,
-                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                             emissiveMap: OOOO0
                         })
                     }, t.prototype.buildCarbonMaterial = function() {
@@ -11516,7 +11516,7 @@
                         shininess: 5,
                         bumpScale: .1,
                         color: 1052688,
-                        emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                        emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                         emissiveMap: lOlll
                     })
                 }, t.prototype.buildFullColorMaterial = function() {
@@ -11529,7 +11529,7 @@
                         shininess: 50,
                         bumpScale: .1,
                         color: t,
-                        emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                        emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                         emissiveMap: OOOO0
                     })
                 }, t.prototype.buildGoldMaterial = function() {
@@ -11541,7 +11541,7 @@
                         shininess: 50,
                         bumpScale: .1,
                         color: 8413232,
-                        emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                        emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                         emissiveMap: OOOO0
                     })
                 }, t.prototype.buildCopperMaterial = function() {
@@ -11553,7 +11553,7 @@
                         shininess: 15,
                         bumpScale: .1,
                         color: 10514512,
-                        emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                        emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                         emissiveMap: OOOO0
                     })
                 }, t.prototype.buildDiamondMaterial = function() {
@@ -11567,12 +11567,12 @@
                         bumpScale: .1,
                         transparent: !0,
                         color: 8421504,
-                        emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                        emissive: lIIIl.hsvToRgbHex(this.hue, 1, 1),
                         emissiveMap: OOOO0
                     })
                 }, t.prototype.l01Il = function(t) {
                     var e, i;
-                    if (this.built_material !== this.finish && (this.O0OlI(this.hue), this.O1lOI.material = this.material), this.shield_mesh.visible = !1, this.material.color.setHex(this.base_color), this.invulnerable ? Date.now() % 500 < 250 ? (this.material.emissive.setHex(lIIIl.hsvToRgbHex(this.hue, .5, .5)), this.material.color.setHex(this.dark_color), this.shield_mat.color.setHex(lIIIl.hsvToRgbHex(this.hue, .5, 1)), this.shield_mesh.visible = !0) : (this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, .5, 1)), this.material.color.setHex(this.base_color), this.shield_mat.color.setHex(0)) : this.lOIl0 > 0 && (this.I110I = Math.random() < this.lOIl0 ? 1 : 0, this.shield_mesh.visible = !0, 1 === this.I110I ? (this.material.emissive.setHex(lIIIl.hsvToRgbHex(this.hue, .5, .5)), this.material.color.setHex(this.dark_color), this.shield_mat.color.setHex(lIIIl.hsvToRgbHex(this.hue, .5, 1))) : (this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, .5, 1)), this.material.color.setHex(this.base_color), this.shield_mat.color.setHex(0)), this.lOIl0 *= .95, this.lOIl0 < .1 && (this.lOIl0 = 0, this.shield_mesh.visible = !1, this.material.color.setHex(this.base_color), this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, .5, 1)))), this.bumping) return t > this.bumpframe + 30 ? (this.bumping = !1, this.I110l.scale.set(2 * this.data.size, 2 * this.data.size, 2 * this.data.size)) : (i = Math.max(0, t - this.bumpframe) / 30, e = 1.5 - Math.cos(Math.pow(i, .5) * (180 * THREE.Math.DEG2RAD) * 2), this.I110l.scale.set(2 * this.data.size * e, 2 * this.data.size * e, 2 * this.data.size * e))
+                    if (this.built_material !== this.finish && (this.O0OlI(this.hue), this.O1lOI.material = this.material), this.shield_mesh.visible = !1, this.material.color.setHex(this.base_color), this.invulnerable ? Date.now() % 500 < 250 ? (this.material.emissive.setHex(lIIIl.hsvToRgbHex(this.hue, 1, 1)), this.material.color.setHex(this.dark_color), this.shield_mat.color.setHex(lIIIl.hsvToRgbHex(this.hue, 1, 1)), this.shield_mesh.visible = !0) : (this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, 1, 1)), this.material.color.setHex(this.base_color), this.shield_mat.color.setHex(0)) : this.lOIl0 > 0 && (this.I110I = Math.random() < this.lOIl0 ? 1 : 0, this.shield_mesh.visible = !0, 1 === this.I110I ? (this.material.emissive.setHex(lIIIl.hsvToRgbHex(this.hue, 1, 1)), this.material.color.setHex(this.dark_color), this.shield_mat.color.setHex(lIIIl.hsvToRgbHex(this.hue, 1, 1))) : (this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, 1, 1)), this.material.color.setHex(this.base_color), this.shield_mat.color.setHex(0)), this.lOIl0 *= .95, this.lOIl0 < .1 && (this.lOIl0 = 0, this.shield_mesh.visible = !1, this.material.color.setHex(this.base_color), this.material.emissive.set(lIIIl.hsvToRgbHex(this.hue, 1, 1)))), this.bumping) return t > this.bumpframe + 30 ? (this.bumping = !1, this.I110l.scale.set(2 * this.data.size, 2 * this.data.size, 2 * this.data.size)) : (i = Math.max(0, t - this.bumpframe) / 30, e = 1.5 - Math.cos(Math.pow(i, .5) * (180 * THREE.Math.DEG2RAD) * 2), this.I110l.scale.set(2 * this.data.size * e, 2 * this.data.size * e, 2 * this.data.size * e))
                 }, t.prototype.getTextureIndex = function(t, e) {
                     return null == t ? 0 : "number" == typeof t ? t : t[e] || t[t.length - 1]
                 }, t.prototype.lO011 = function(t, e) {
