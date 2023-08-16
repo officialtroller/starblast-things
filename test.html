@@ -9376,6 +9376,9 @@
                             case "fullcolor":
                                 this.buildFullColorMaterial();
                                 break;
+                            case "pinktest":
+                                this.buildTestMaterial();
+                                break;
                             default:
                                 this.buildDefaultMaterial()
                         }
@@ -9396,6 +9399,18 @@
                             shininess: 30,
                             bumpScale: .1,
                             color: 5275808,
+                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissiveMap: OOOO0
+                        })
+                    }, t.prototype.buildTestMaterial = function() {
+                        return this.material = new THREE.MeshPhongMaterial({
+                            map: l00O1,
+                            bumpMap: l00O1,
+                            specularMap: l00O1,
+                            specular: 11075839,
+                            shininess: 30,
+                            bumpScale: .1,
+                            color: 16711935,
                             emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
                             emissiveMap: OOOO0
                         })
@@ -11425,6 +11440,9 @@
                         case "fullcolor":
                             this.buildFullColorMaterial();
                             break;
+                        case "pinktest":
+                            this.buildTestMaterial();
+                            break;
                         case "copper":
                             this.buildCopperMaterial();
                             break;
@@ -11475,6 +11493,18 @@
                             shininess: 30,
                             bumpScale: .1,
                             color: 5275808,
+                            emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
+                            emissiveMap: OOOO0
+                        })
+                    }, t.prototype.buildTestMaterial = function() {
+                        return this.material = new THREE.MeshPhongMaterial({
+                            map: l00O1,
+                            bumpMap: l00O1,
+                            specularMap: l00O1,
+                            specular: 11075839,
+                            shininess: 30,
+                            bumpScale: .1,
+                            color: 16711935,
                             emissive: lIIIl.hsvToRgbHex(this.hue, .5, 1),
                             emissiveMap: OOOO0
                         })
@@ -17648,6 +17678,9 @@
                         s.addColorStop(.5, "hsl(" + this.hue + ",90%,30%)"),
                         s.addColorStop(1, "hsl(" + this.hue + ",90%,60%)");
                         break;
+                    case "pinktest":
+                        s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "#ff1199"), s.addColorStop(.5, "#ffa6c9"), s.addColorStop(.5, "#ff1199"), s.addColorStop(1, "#731963");
+                        break;
                     default:
                         s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "#EEE"), s.addColorStop(1, "#666")
                 }
@@ -17912,7 +17945,8 @@
                     titanium: "Titanium",
                     carbon: "Carbon",
                     X27: "Electrical Blue",
-                    fullcolor: "Full Color Ship"
+                    fullcolor: "Full Color Ship",
+                    pinktest: "Test Material"
                 },
                 laser: {
                     0: "Single",
