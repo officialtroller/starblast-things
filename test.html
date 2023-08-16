@@ -9373,6 +9373,8 @@
                             case "X27":
                                 this.buildX27Material();
                                 break;
+                            case "fullcolor":
+                                this.buildFullColorMaterial();
                             default:
                                 this.buildDefaultMaterial()
                         }
@@ -11418,6 +11420,9 @@
                             break;
                         case "X27":
                             this.buildX27Material();
+                            break;
+                        case "fullcolor":
+                            this.buildFullColorMaterial();
                             break;
                         case "copper":
                             this.buildCopperMaterial();
@@ -17633,7 +17638,14 @@
                         for (l = t.createLinearGradient(0, 0, 0, i), l.addColorStop(0, "#333"), l.addColorStop(.1, "#888"), n = o = 0, u = h - 1; o <= u; n = o += 1) l.addColorStop((n + .5) / h, "#000"), l.addColorStop(Math.min(1, (n + 1.5) / h), "#888");
                         break;
                     case "X27":
-                    s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "hsla(220,100%,30%)"), s.addColorStop(.5, "hsla(200,100%,70%)"), s.addColorStop(.5, "hsla(220,100%,40%)"), s.addColorStop(1, "hsla(200,100%,70%)");
+                        s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "hsla(220,100%,30%)"), s.addColorStop(.5, "hsla(200,100%,70%)"), s.addColorStop(.5, "hsla(220,100%,40%)"), s.addColorStop(1, "hsla(200,100%,70%)");
+                        break;
+                    case "fullcolor":
+                        s = t.createLinearGradient(0, 0, 0, i),
+                        s.addColorStop(0, "hsl(" + this.hue + ",90%,50%)"),
+                        s.addColorStop(.5, "hsl(" + this.hue + ",90%,70%)"),
+                        s.addColorStop(.5, "hsl(" + this.hue + ",90%,30%)"),
+                        s.addColorStop(1, "hsl(" + this.hue + ",90%,60%)");
                         break;
                     default:
                         s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "#EEE"), s.addColorStop(1, "#666")
@@ -17898,7 +17910,8 @@
                     gold: "Gold",
                     titanium: "Titanium",
                     carbon: "Carbon",
-                    X27: "Electrical Blue"
+                    X27: "Electrical Blue",
+                    fullcolor: "Full Color Ship"
                 },
                 laser: {
                     0: "Single",
