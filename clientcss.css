@@ -752,7 +752,6 @@ a:visited {
 }
 
 .followtools span {
-    text-transform: uppercase;
     letter-spacing: -0.5px
 }
 
@@ -912,7 +911,6 @@ a:visited {
     padding: 0 8px;
     font-size: .8em;
     text-align: center;
-    text-transform: uppercase;
     border: 0 solid hsl(60, 90%, 10%);
     width: 415px;
     max-width: 80%;
@@ -1421,7 +1419,6 @@ table {
     font-size: .9vw;
     margin: .7vw;
     cursor: pointer;
-    text-transform: uppercase
 }
 
 .alphacentauri button:hover {
