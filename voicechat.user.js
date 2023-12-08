@@ -155,6 +155,8 @@ setTimeout(() => {
     muteIndicator.style.top = '10px';
     muteIndicator.style.left = '10px';
     muteIndicator.style.zIndex = '1000';
+    muteIndicator.style.pointerEvents = 'none';
+    muteIndicator.style.userSelect = 'none';
 
     // make clicking the mute indicator toggle the mute state
     muteIndicator.addEventListener('click', toggleAudioStream);
