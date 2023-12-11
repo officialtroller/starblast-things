@@ -121,6 +121,15 @@ if (socialDie1) {
             voias.appendChild(document.createTextNode('Voice Chat'));
             voias.style.userSelect = 'none';
             voias.style.pointerEvents = 'none';
+            //Blank Badges
+            var oiceat = document.createElement('input');
+            oiceat.type = 'checkbox';
+            oiceat.id = 'blankbadge';
+            var voias = document.createElement('label');
+            voias.htmlFor = 'blankbadge';
+            voias.appendChild(document.createTextNode('Blank Badges'));
+            voias.style.userSelect = 'none';
+            voias.style.pointerEvents = 'none';
             //Emotes
             var ebot = document.createElement('label');
             ebot.htmlFor = 'emoteCapacity';
@@ -257,7 +266,8 @@ function loadSettings() {
         'blurlol',
         'stationists',
         'weaponists',
-        'voicechat'
+        'voicechat',
+        'blankbadge'
     ];
 
     settings.forEach(function (setting) {
@@ -307,6 +317,8 @@ function getKey(setting) {
             return 'timdel';
         case 'voicechat':
             return 'oiceat';
+        case 'blankbadge':
+            return 'goodles';
         default:
             return setting;
     }
