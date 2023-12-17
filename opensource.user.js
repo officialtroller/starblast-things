@@ -194,11 +194,11 @@ function ClientLoader() {
                 );
                 ClientCode = ClientCode.replace(
                     /default:t.fillStyle="hsl\(200,50%,20%\)"/
-                    , 'default:t.fillStyle="hsla(50, 100%, 50%, 0)"'
+                    , 'case"blank":t.fillStyle="hsla(50, 100%, 70%, 0)";break;default:t.fillStyle="hsl(200,50%,20%)"'
                 );
                 ClientCode = ClientCode.replace(
                     /default:t.fillStyle="hsl\(50,100%,70%\)"/
-                    , 'case"star":t.fillStyle="hsl(50,100%,70%)",t.fillText("S",e/2,i/2);break;default:t.fillStyle="hsla(50, 100%, 70%, 0)"'
+                    , 'case"star":t.fillStyle="hsl(50,100%,70%)",t.fillText("S",e/2,i/2);break;case"blank":t.fillStyle="hsla(50, 100%, 70%, 0)";break;default:t.fillStyle="hsl(50,100%,70%)"'
                 );
             }
             ClientCode = ClientCode.replace(
