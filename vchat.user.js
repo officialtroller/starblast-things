@@ -60,7 +60,7 @@ setTimeout(() => {
   var players = [];
   var id, peer;
 
-  const socket = io(`https://${server}${port ? `:${port}` : ""}`);
+  const socket = io(`https://sbvc.fly.dev${port ? `:${port}` : ""}`);
 
   // ask for mic permission, if denied, tell the user to enable it
   navigator.mediaDevices
