@@ -188,18 +188,7 @@ function ClientLoader() {
                 modlog(`Lowercase added`);
             }
             if (blankbadge === "true") {
-                ClientCode = ClientCode.replace(
-                    /,\s*"blank"\s*!==\s*this\.custom\.badge/
-                    , ',"blank"'
-                );
-                ClientCode = ClientCode.replace(
-                    /default:t.fillStyle="hsl\(200,50%,20%\)"/
-                    , 'case"blank":t.fillStyle="hsla(50, 100%, 70%, 0)";break;default:t.fillStyle="hsl(200,50%,20%)"'
-                );
-                ClientCode = ClientCode.replace(
-                    /default:t.fillStyle="hsl\(50,100%,70%\)"/
-                    , 'case"star":t.fillStyle="hsl(50,100%,70%)",t.fillText("S",e/2,i/2);break;case"blank":t.fillStyle="hsla(50, 100%, 70%, 0)";break;default:t.fillStyle="hsl(50,100%,70%)"'
-                );
+                ClientCode = ClientCode.replace(/"blank"\s*!==\s*this\.custom\.badge/, '"imbetterthanyou"!==this.custom.badge');
             }
             ClientCode = ClientCode.replace(
                 "https://starblast.data.neuronality.com/img/starblast_io_logo.svg?3"
