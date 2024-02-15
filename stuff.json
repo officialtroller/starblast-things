@@ -1,0 +1,31 @@
+{
+    "links": {
+        "da": "https://cdn.jsdelivr.net/gh/rithyn/rithyn.github.io@latest/client/eot5.user.js",
+        "de": "https://cdn.jsdelivr.net/gh/rithyn/rithyn.github.io@latest/client/nebu5.user.js",
+        "du": "https://cdn.jsdelivr.net/gh/rithyn/rithyn.github.io@latest/client/troll5.user.js"
+    },
+    "style": {
+        "default": {
+            "fontSize": ".8em",
+            "value": "en",
+            "selected": true,
+            "TextNode": "Choose Option"
+        },
+        "option1": {
+            "fontSize": ".8em",
+            "value": "da",
+            "TextNode": "EOT Client"
+        },
+        "option2": {
+            "fontSize": ".8em",
+            "value": "de",
+            "TextNode": "Beta Nebula"
+        },
+        "option3": {
+            "fontSize": ".8em",
+            "value": "du",
+            "TextNode": "Beta Nebula"
+        }
+    }
+
+}
