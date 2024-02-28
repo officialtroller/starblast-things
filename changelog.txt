@@ -1,5 +1,5 @@
 2024-02-01
-* Added 29 new ECP badges. Thanks Me.
+* Added 29 new ECP badges. Thanks to Me.
 * Added 16 new Materials. Thanks to Me too.
 * Added new Client Settings.
 * Modding Space allowes you to play Any Mode now.
