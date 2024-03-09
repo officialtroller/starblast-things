@@ -1,0 +1,51 @@
+{
+  "last_update": 1704844800000,
+  "ratings": {
+    "Europe": [{
+        "id": "591585eaf934d05044fa4193",
+        "custom": {
+          "badge": "blank",
+          "finish": "carbon",
+          "laser": "3"
+        },
+        "name": "SᄅF̶ Im a Loser",
+        "live_rating": 12523.1281031846515,
+        "official_rating": 12496.5677767920606
+      }],
+    "America": [{
+        "id": "591585eaf934d05044fa4193",
+        "custom": {
+          "badge": "blank",
+          "finish": "carbon",
+          "laser": "3"
+        },
+        "name": "SᄅF̶ Im a Loser",
+        "live_rating": 12523.1281031846515,
+        "official_rating": 12496.5677767920606
+      }],
+    "Asia": [{
+        "id": "591585eaf934d05044fa4193",
+        "custom": {
+          "badge": "blank",
+          "finish": "carbon",
+          "laser": "3"
+        },
+        "name": "SᄅF̶ Im a Loser",
+        "live_rating": 12523.1281031846515,
+        "official_rating": 12496.5677767920606
+      }],
+    "Brazil": [{
+        "id": "591585eaf934d05044fa4193",
+        "custom": {
+          "badge": "blank",
+          "finish": "carbon",
+          "laser": "3"
+        },
+        "name": "SᄅF̶ Im a Loser",
+        "live_rating": 12523.1281031846515,
+        "official_rating": 12496.5677767920606
+      }],
+    "local": [],
+    "Australia": []
+  }
+}
