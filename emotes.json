@@ -1,13 +1,13 @@
 {
     "Mode": {
         "SurvivalMode": {
-            "emotes": "{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"Fuck you\",icon:\"🤡\",key:\"J\"},{text:\"Discord\",icon:\"{\",key:\"D\"}"
+            "emotes": "{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"Loser\",icon:\"🤡\",key:\"J\"},{text:\"Discord\",icon:\"{\",key:\"D\"}"
         },
         "TeamMode": {
-            "emotes": "{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"Fuck you\",icon:\"🤡\",key:\"J\"},{text:\"Discord\",icon:\"{\",key:\"L\"}"
+            "emotes": "{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"Loser\",icon:\"🤡\",key:\"J\"},{text:\"Discord\",icon:\"{\",key:\"L\"}"
         },
         "InvasionMode": {
-            "emotes": "{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"Fuck you\",icon:\"🤡\",key:\"J\"},{text:\"Discord\",icon:\"{\",key:\"D\"},{text:\"Asteroid\",icon:\"/\",key:\"I\"},{text:\"Alien\",icon:\"0\",key:\"T\"}"
+            "emotes": "{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"Loser\",icon:\"🤡\",key:\"J\"},{text:\"Discord\",icon:\"{\",key:\"D\"},{text:\"Asteroid\",icon:\"/\",key:\"I\"},{text:\"Alien\",icon:\"0\",key:\"T\"}"
         }
     }
 }
