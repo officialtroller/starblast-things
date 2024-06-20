@@ -104,7 +104,7 @@
                     "ingame": "Kleinem"
                 },
                 {
-                    "name": "twok",
+                    "name": "2k",
                     "icon": "http://starblast.io/ecp/2k.jpg",
                     "ingame": "Double K"
                 },
@@ -164,7 +164,7 @@
                     "ingame": "Nova"
                 },
                 {
-                    "name": "fourfrfew",
+                    "name": "45rfew",
                     "icon": "http://starblast.io/ecp/45rfew.jpg",
                     "ingame": "45rfew"
                 },
@@ -200,21 +200,24 @@
         "cases": [
             {
                 "name": "blackmat",
+                "ingame": "Full Black",
                 "cheese": "case \"blackmat\":this.blackmat();break;",
                 "color": "case\"blackmat\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"#000000\"),s.addColorStop(.5,\"#000000\"),s.addColorStop(.5,\"#000000\"),s.addColorStop(1,\"#000000\");break;",
-                "func": "t.prototype.blackmat=function(){var t; return this.material=new THREE.MeshPhongMaterial({map:{mapvalue},bumpMap:{mapvalue},specular:0,shininess:0,bumpScale:.1,color:0,{emissiveregex}.hsvToRgbHex(this.hue, 1, 1),{carbonEmissiveMap}})};"
+                "func": "t.prototype.blackmat=function(){var t; return this.material=new THREE.MeshPhongMaterial({map:{mapvalue},bumpMap:{mapvalue},specular:0,shininess:0,bumpScale:.1,color:0,{emissiveregex}.hsvToRgbHex(this.hue, 1, 1),{carbonEmissiveMap}})},"
             },
             {
                 "name": "fullbolor",
+                "ingame": "Full Color",
                 "cheese": "case \"fullbolor\":this.fullbolor();break;",
                 "color": "case\"fullbolor\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"hsl(\" + this.hue + \",90%,50%)\"),s.addColorStop(.5,\"hsl(\" + this.hue + \",90%,70%)\"),s.addColorStop(.5,\"hsl(\" + this.hue + \",90%,30%)\"),s.addColorStop(1,\"hsl(\" + this.hue + \",90%,60%)\");break;",
-                "func": "t.prototype.fullbolor=function(){var t; return t = {fullemmisiv}.hsvToRgbHex(this.hue, 1, 1), this.material=new THREE.MeshPhongMaterial({map:{mapvalue},bumpMap:{mapvalue},specular:12632256,shininess:50,bumpScale:.1,color:t,{emissiveregex}.hsvToRgbHex(this.hue, 1, 1),{alloyEmissiveMap}})};"
+                "func": "t.prototype.fullbolor=function(){var t; return t = {fullemmisiv}.hsvToRgbHex(this.hue, 1, 1), this.material=new THREE.MeshPhongMaterial({map:{mapvalue},bumpMap:{mapvalue},specular:12632256,shininess:50,bumpScale:.1,color:t,{emissiveregex}.hsvToRgbHex(this.hue, 1, 1),{alloyEmissiveMap}})},"
             },
             {
                 "name": "fullcalor",
+                "ingame": "Full Carbon",
                 "cheese": "case \"fullcalor\":this.fullcalor();break;",
                 "color": "case\"fullcalor\":for(s=t.createLinearGradient(0,0,0,i),h=Math.min(10,this.size/10),n=a=0,u=h-1;a<=u;n=a+=1)s.addColorStop(n/h,\"hsl(\" + this.hue + \",90%,30%)\"),s.addColorStop((n+1)/h,\"hsl(\" + this.hue + \",90%,80%)\");for(l=t.createLinearGradient(0,0,0,i),l.addColorStop(0,\"hsl(\" + this.hue + \",90%,50%)\"),l.addColorStop(.1,\"hsl(\" + this.hue + \",90%,80%)\"),n=o=0,d=h-1;o<=d;n=o+=1)l.addColorStop((n+.5)/h,\"hsl(\" + this.hue + \",90%,30%)\"),l.addColorStop(Math.min(1,(n+1.5)/h),\"hsl(\" + this.hue + \",90%,80%)\");break;",
-                "func": "t.prototype.fullcalor=function(){var t; return t = {fullemmisiv}.hsvToRgbHex(this.hue, 1, 1), this.material=new THREE.MeshPhongMaterial({map:{mapvalue},bumpMap:{mapvalue},specular:12632256,shininess:5,bumpScale:.1,color:t,{emissiveregex}.hsvToRgbHex(this.hue, 1, 1),{carbonEmissiveMap}})};"
+                "func": "t.prototype.fullcalor=function(){var t; return t = {fullemmisiv}.hsvToRgbHex(this.hue, 1, 1), this.material=new THREE.MeshPhongMaterial({map:{mapvalue},bumpMap:{mapvalue},specular:12632256,shininess:5,bumpScale:.1,color:t,{emissiveregex}.hsvToRgbHex(this.hue, 1, 1),{carbonEmissiveMap}})},"
             }
         ]
     }
