@@ -1,0 +1,55 @@
+{
+    "Emotes": {
+        "SurvivalMode": {
+            "emotes": "{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"Loser\",icon:\"🤡\",key:\"J\"},{text:\"Discord\",icon:\"{\",key:\"D\"}"
+        },
+        "TeamMode": {
+            "emotes": "{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"Loser\",icon:\"🤡\",key:\"J\"},{text:\"Discord\",icon:\"{\",key:\"L\"}"
+        },
+        "InvasionMode": {
+            "emotes": "{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"ㅤ\",icon:\"ㅤ\",key:\"ㅤ\"},{text:\"Loser\",icon:\"🤡\",key:\"J\"},{text:\"Discord\",icon:\"{\",key:\"D\"},{text:\"Asteroid\",icon:\"/\",key:\"I\"},{text:\"Alien\",icon:\"0\",key:\"T\"}"
+        }
+    },
+    "Badges": {
+        "ClientECP": {
+            "cases": [
+                { "name": "dev", "icon": "http://starblast.io/ecp/dev.png", "ingame": "Developer" },
+                { "name": "translator", "icon": "http://starblast.io/ecp/translator.png", "ingame": "Translator" },
+                { "name": "shipdesigner", "icon": "http://starblast.io/ecp/shipdesigner.jpg", "ingame": "Shipwright" },
+                { "name": "srcchamp", "icon": "http://starblast.io/ecp/srcchamp.png", "ingame": "SRC Champion" },
+                { "name": "sdcchamp", "icon": "http://starblast.io/ecp/sdcchamp.png", "ingame": "SDC Champion" },
+                { "name": "x27", "icon": "http://starblast.io/ecp/x27.png", "ingame": "X-27" },
+                { "name": "loveship", "icon": "http://starblast.io/ecp/loveship.png", "ingame": "Loveship" },
+                { "name": "paralx", "icon": "http://starblast.io/ecp/paralx.jpg", "ingame": "Paralx" },
+                { "name": "iridium_ore", "icon": "http://starblast.io/ecp/iridium_ore.jpg", "ingame": "Iridium Ore" },
+                { "name": "carme", "icon": "http://starblast.io/ecp/carme.jpg", "ingame": "Carme" },
+                { "name": "pudding", "icon": "http://starblast.io/ecp/pudding.jpg", "ingame": "Pudding Ship" },
+                { "name": "acarii", "icon": "http://starblast.io/ecp/acarii.jpg", "ingame": "Acarii" },
+                { "name": "scarn", "icon": "http://starblast.io/ecp/scarn.jpg", "ingame": "Scarn" },
+                { "name": "tournebulle", "icon": "http://starblast.io/ecp/tournebulle.png", "ingame": "Tournebulle" },
+                { "name": "blackstar", "icon": "http://starblast.io/ecp/blackstar.jpg", "ingame": "Dank Dmitron" },
+                { "name": "oh", "icon": "http://starblast.io/ecp/oh.jpg", "ingame": "Oh_" },
+                { "name": "ancientsky", "icon": "http://starblast.io/ecp/ancientsky.jpg", "ingame": "Ancient Sky" },
+                { "name": "kleinem", "icon": "http://starblast.io/ecp/kleinem.jpg", "ingame": "Kleinem" },
+                { "name": "2k", "icon": "http://starblast.io/ecp/2k.jpg", "ingame": "Double K" },
+                { "name": "xcommander", "icon": "http://starblast.io/ecp/xcommander.jpg", "ingame": "X-Commander" },
+                { "name": "fady", "icon": "http://starblast.io/ecp/fady.jpg", "ingame": "Fady" },
+                { "name": "andromeda", "icon": "http://starblast.io/ecp/andromeda.jpg", "ingame": "Andromeda" },
+                { "name": "mortyrules", "icon": "http://starblast.io/ecp/mortyrules.jpg", "ingame": "MortyRules" },
+                { "name": "pell", "icon": "http://starblast.io/ecp/pell.jpg", "ingame": "Pell" },
+                { "name": "dimed", "icon": "http://starblast.io/ecp/dimed.jpg", "ingame": "Dimed" },
+                { "name": "finalizer", "icon": "http://starblast.io/ecp/finalizer.jpg", "ingame": "Finalizer" },
+                { "name": "mikr", "icon": "http://starblast.io/ecp/mikr.jpg", "ingame": "Mikr Pollock" },
+                { "name": "goldman", "icon": "http://starblast.io/ecp/goldman.jpg", "ingame": "Goldman" },
+                { "name": "uranus", "icon": "http://starblast.io/ecp/uranus.jpg", "ingame": "Uranus" },
+                { "name": "nova", "icon": "http://starblast.io/ecp/nova.jpg", "ingame": "Nova" },
+                { "name": "45rfew", "icon": "http://starblast.io/ecp/45rfew.jpg", "ingame": "45rfew" },
+                { "name": "bhpsngum", "icon": "http://starblast.io/ecp/bhpsngum.png", "ingame": "Bhpsngum" },
+                { "name": "valiant", "icon": "https://starblast.io/ecp/valiant.jpg", "ingame": "Valiant" },
+                { "name": "notus", "icon": "http://starblast.io/ecp/notus.png", "ingame": "Notus" },
+                { "name": "destroy", "icon": "http://starblast.io/ecp/destroy.png", "ingame": "Destroy" },
+                { "name": "schickenman", "icon": "http://starblast.io/ecp/schickenman.png", "ingame": "SChickenMan" }
+            ]
+        }
+    }
+}
