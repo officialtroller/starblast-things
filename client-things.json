@@ -196,10 +196,16 @@
             ],
             "special_ecps": [
                 {
+                    "identifier": "modd€d_starblast_b€st",
                     "name": "troller",
                     "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/troller.PNG",
-                    "ingame": "Troller",
-                    "identifier": "modd€d_starblast_b€st"
+                    "ingame": "Troller"
+                },
+                {
+                    "identifier": "modd€d_starblast_b€st",
+                    "name": "clientdev",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/moddedsb.png",
+                    "ingame": "Client Dev"
                 }
             ]
         }
