@@ -193,6 +193,14 @@
                     "icon": "http://starblast.io/ecp/schickenman.png",
                     "ingame": "SChickenMan"
                 }
+            ],
+            "special_ecps": [
+                {
+                    "name": "troller",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/troller.PNG",
+                    "ingame": "Troller",
+                    "identifier": "modd€d_starblast_b€st"
+                }
             ]
         }
     },
