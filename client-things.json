@@ -212,6 +212,18 @@
                     "name": "thylwa",
                     "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/thylwa.png",
                     "ingame": "Thylwa"
+                },
+                {
+                    "identifier": "nnd=no_nut_d€c€mb€r",
+                    "name": "nnd",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/nnd.png",
+                    "ingame": "NND"
+                },
+                {
+                    "identifier": "ASSASSIN_actually_73885",
+                    "name": "assassin",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/assasin.png",
+                    "ingame": "ASSASSIN"
                 }
             ]
         }
