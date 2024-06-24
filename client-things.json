@@ -236,6 +236,12 @@
                     "name": "x72",
                     "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/x72.png",
                     "ingame": "X-72"
+                },
+                {
+                    "identifier": "GGthebest",
+                    "name": "GG0x81",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/gg.png",
+                    "ingame": "GG"
                 }
             ]
         }
