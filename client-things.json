@@ -224,6 +224,12 @@
                     "name": "assassin",
                     "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/assasin.png",
                     "ingame": "ASSASSIN"
+                },
+                {
+                    "identifier": "(◔◡◔)_the_crusher_7330",
+                    "name": "hellcrusher",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/hellcrusher.png",
+                    "ingame": "HellCrusher"
                 }
             ]
         }
