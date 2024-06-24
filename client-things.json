@@ -226,10 +226,16 @@
                     "ingame": "ASSASSIN"
                 },
                 {
-                    "identifier": "(◔◡◔)_the_crusher_7330",
-                    "name": "hellcrusher",
-                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/hellcrusher.png",
-                    "ingame": "HellCrusher"
+                    "identifier": "Nickwe",
+                    "name": "x72",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/x72.png",
+                    "ingame": "X-72"
+                },
+                {
+                    "identifier": "Nickwe",
+                    "name": "x72",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/x72.png",
+                    "ingame": "X-72"
                 }
             ]
         }
