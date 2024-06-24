@@ -206,6 +206,12 @@
                     "name": "clientdev",
                     "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/moddedsb.png",
                     "ingame": "Client Dev"
+                },
+                {
+                    "identifier": "thylwa_th€_l€g€nd",
+                    "name": "thylwa",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/thylwa.png",
+                    "ingame": "Thylwa"
                 }
             ]
         }
