@@ -283,7 +283,7 @@
             {
                 "name": "elecblue",
                 "ingame": "Electrical Blue",
-                "cheese": "case \"Onyx\":this.buildOnyxMaterial();break;",
+                "cheese": "case \"Onyx\":this.elecblue();break;",
                 "color": "case \"elecblue\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"hsla(220,100%,30%)\"),s.addColorStop(.5,\"hsla(200,100%,70%)\"),s.addColorStop(.5,\"hsla(220,100%,40%)\"),s.addColorStop(1,\"hsla(200,100%,70%)\");break;",
                 "func": "t.prototype.elecblue = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:{mapvalue}, specular: 4243711, shininess: 30, bumpScale: .1, color: 5275808, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {alloyEmissiveMap}})},"
             }
