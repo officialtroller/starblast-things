@@ -192,6 +192,11 @@
                     "name": "schickenman",
                     "icon": "http://starblast.io/ecp/schickenman.png",
                     "ingame": "SChickenMan"
+                },
+                {
+                    "name": "serverico",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/servericon.png",
+                    "ingame": ".gg/JFCXza3tnd"
                 }
             ],
             "special_ecps": [
