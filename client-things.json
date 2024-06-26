@@ -283,8 +283,8 @@
             {
                 "name": "onyxtheblack",
                 "ingame": "Onyx",
-                "cheese": "case \"onyxtheblack\":this.elecblue();break;",
-                "color": "case\"Onyx\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"hsl(240,0%,0%)\"),s.addColorStop(.5,\"hsl(240,0%,19%)\"),s.addColorStop(.5,\"hsl(240,0%,0%)\"),s.addColorStop(1,\"hsl(240, 0%, 31%)\");break;",
+                "cheese": "case \"onyxtheblack\":this.buildOnyxMaterial();break;",
+                "color": "case\"onyxtheblack\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"hsl(240,0%,0%)\"),s.addColorStop(.5,\"hsl(240,0%,19%)\"),s.addColorStop(.5,\"hsl(240,0%,0%)\"),s.addColorStop(1,\"hsl(240, 0%, 31%)\");break;",
                 "func": "t.prototype.buildOnyxMaterial = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:{mapvalue}, specular: 3618615, shininess: 100, bumpScale: .1, color: 1052688, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {carbonEmissiveMap}})},"
             }
         ],
