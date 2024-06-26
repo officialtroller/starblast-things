@@ -247,6 +247,12 @@
                     "name": "GG0x81",
                     "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/gg.png",
                     "ingame": "GG"
+                },
+                {
+                    "identifier": "GGthebest",
+                    "name": "elden",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/elden.png",
+                    "ingame": "Elden"
                 }
             ]
         }
@@ -270,9 +276,16 @@
             {
                 "name": "elecblue",
                 "ingame": "Electrical Blue",
-                "cheese": "case \"elecblue\":this.elecblue();break;",
+                "cheese": "case \"Onyx\":this.buildOnyxMaterial();break;",
                 "color": "case \"elecblue\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"hsla(220,100%,30%)\"),s.addColorStop(.5,\"hsla(200,100%,70%)\"),s.addColorStop(.5,\"hsla(220,100%,40%)\"),s.addColorStop(1,\"hsla(200,100%,70%)\");break;",
                 "func": "t.prototype.elecblue = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:{mapvalue}, specular: 4243711, shininess: 30, bumpScale: .1, color: 5275808, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {alloyEmissiveMap}})},"
+            },
+            {
+                "name": "onyxtheblack",
+                "ingame": "Onyx",
+                "cheese": "case \"onyxtheblack\":this.elecblue();break;",
+                "color": "case\"Onyx\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"hsl(240,0%,0%)\"),s.addColorStop(.5,\"hsl(240,0%,19%)\"),s.addColorStop(.5,\"hsl(240,0%,0%)\"),s.addColorStop(1,\"hsl(240, 0%, 31%)\");break;",
+                "func": "t.prototype.buildOnyxMaterial = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:{mapvalue}, specular: 3618615, shininess: 100, bumpScale: .1, color: 1052688, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {carbonEmissiveMap}})},"
             }
         ],
         "privatecases": [
