@@ -171,3 +171,6 @@ input:checked+.slider:before {
 .community a:hover {
     filter: none;
 }
+#player input[type="text"]:focus {
+    transform: scale(1.2);
+}
