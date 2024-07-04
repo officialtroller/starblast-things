@@ -162,3 +162,12 @@ input:checked+.slider:before {
 }
 
 #play #game_modes {background:rgba(255,255,255,.0)}
+
+.community a {
+    filter: blur(4px);
+    transition: filter .5s;
+}
+
+.community a:hover {
+    filter: none;
+}
