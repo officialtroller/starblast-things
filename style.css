@@ -161,16 +161,19 @@ input:checked+.slider:before {
     transition: all .1s;
 }
 
-#play #game_modes {background:rgba(255,255,255,.0)}
+#play #game_modes {
+    background: rgba(255, 255, 255, .0)
+}
 
 .community a {
-    filter: blur(4px);
+    backdrop-filter: blur(4px);
     transition: filter .5s;
 }
 
 .community a:hover {
-    filter: none;
+    backdrop-filter: none;
 }
+
 #player input[type="text"]:focus {
     transform: scale(1.2);
 }
