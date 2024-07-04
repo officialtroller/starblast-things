@@ -177,3 +177,11 @@ input:checked+.slider:before {
 #player input[type="text"]:focus {
     transform: scale(1.2);
 }
+
+.colorchosen {
+    margin: 0 0 3px 0
+}
+
+.inputwrapper {
+    background: radial-gradient(circle, hsla(200,0%,0%,1) 0,hsla(200,0%,0%,1) 20%,hsla(200,0%,0%,1) 40%,hsla(200,20%,40%,.5) 70%);
+}
