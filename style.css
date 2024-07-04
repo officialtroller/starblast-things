@@ -107,7 +107,3 @@ input:checked+.slider:before {
 .inputwrapper {
     background: radial-gradient(circle, hsla(200,0%,0%,1) 0,hsla(200,0%,0%,1) 20%,hsla(200,0%,0%,1) 40%,hsla(200,20%,40%,.5) 100%);
 }
-
-.inputwrapper img {
-    top:6px;
-}
