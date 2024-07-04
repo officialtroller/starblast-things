@@ -1,0 +1,155 @@
+#overlay,
+#respawn>div.stats>i.fa.fa-envelope,
+#respawn>div.stats>i.fa.fa-facebook,
+#respawn>div.stats>i.fa.fa-twitter,
+#respawn>div.stats>i.fa.fa-vk {
+    display: none
+}
+
+#respawn>div.stats {
+    border-radius: 20px
+}
+
+.social i,
+.mobile-social i,
+.mobile-tools i,
+.stats i {
+    border-radius: 50%
+}
+
+#donate,
+#moddingspace,
+#rankings,
+#training {
+    border-radius: 25px 50px;
+    margin: 4px;
+    padding: 7px;
+    transition: color .5s;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: color .5s, border-radius .5s, transform .2s
+}
+
+#donate:hover,
+#moddingspace:hover,
+#rankings:hover,
+#training:hover {
+    border-radius: 50px 25px
+}
+
+#donate::before,
+#moddingspace::before,
+#rankings::before,
+#training::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition: transform .5s;
+    border-radius: 50px 25px
+}
+
+#donate:hover::before,
+#moddingspace:hover::before,
+#rankings:hover::before,
+#training:hover::before {
+    transform: scaleX(1) scale(1.2);
+    transform-origin: 0 50%
+}
+
+#donate:hover i,
+#moddingspace:hover i,
+#rankings:hover i,
+#training:hover i {
+    filter: blur(0);
+    transition: .5s
+}
+
+#donate i,
+#moddingspace i,
+#rankings i,
+#training i {
+    filter: blur(4px);
+    transition: .5s
+}
+
+#donate:hover span,
+#moddingspace:hover span,
+#rankings:hover span,
+#training:hover span {
+    filter: none
+}
+
+#donate span,
+#moddingspace span,
+#rankings span,
+#training span {
+    filter: blur(4px);
+    transition: filter .5s
+}
+
+.inputwrapper,
+.frozenbg,
+.frozenbg:visited,
+.slider {
+    border-radius: 20px
+}
+
+#colors span,
+.slider:before,
+.colorchosen {
+    border-radius: 50%
+}
+
+input:checked+.slider {
+    background-color: #00ff00
+}
+
+input:checked+.slider:before {
+    box-shadow: -3px 0px 12px black
+}
+
+.slider:before {
+    box-shadow: 3px 0px 12px black
+}
+
+.modal::-webkit-scrollbar-track,
+.modal::-webkit-scrollbar-thumb {
+    border-radius: 15px
+}
+
+.modal::-webkit-scrollbar {
+    width: 15px
+}
+
+.changelog-new[data-translate-base="changelog_new"] {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.changelog-new[data-translate-base="community"] {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.playbtn i {
+    transition: all .2s;
+}
+
+.playbtn i:active,
+#player button:active,
+#respawn_actions button:active,
+.donate-btn:active,
+#donate:active,
+#moddingspace:active,
+#rankings:active,
+#training:active {
+    transform: scale(90%);
+}
