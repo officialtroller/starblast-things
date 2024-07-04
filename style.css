@@ -153,3 +153,9 @@ input:checked+.slider:before {
 #training:active {
     transform: scale(90%);
 }
+
+#player button,
+#respawn_actions button,
+.donate-btn {
+    border-radius: 15px;
+}
