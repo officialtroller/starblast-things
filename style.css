@@ -140,7 +140,7 @@ input:checked+.slider:before {
 }
 
 .playbtn i {
-    transition: all .2s;
+    transition: all .1s;
 }
 
 .playbtn i:active,
@@ -158,4 +158,5 @@ input:checked+.slider:before {
 #respawn_actions button,
 .donate-btn {
     border-radius: 15px;
+    transition: all .1s;
 }
