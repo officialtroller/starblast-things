@@ -88,12 +88,12 @@ input:checked+.slider:before {
 }
 
 .community a {
-    backdrop-filter: blur(4px);
+    filter: blur(4px);
     transition: filter .5s;
 }
 
 .community a:hover {
-    backdrop-filter: none;
+    filter: none;
 }
 
 #player input[type="text"]:focus {
