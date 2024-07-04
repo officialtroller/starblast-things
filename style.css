@@ -160,3 +160,5 @@ input:checked+.slider:before {
     border-radius: 15px;
     transition: all .1s;
 }
+
+#play #game_modes {background:rgba(255,255,255,.0)}
