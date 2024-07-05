@@ -107,3 +107,13 @@ input:checked+.slider:before {
 .inputwrapper {
     background: radial-gradient(circle, hsla(200,0%,0%,1) 0,hsla(200,0%,0%,1) 20%,hsla(200,0%,0%,1) 40%,hsla(200,20%,40%,.5) 100%);
 }
+
+#moddingspace {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#rankings {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
