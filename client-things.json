@@ -286,6 +286,13 @@
                 "cheese": "case \"onyxtheblack\":this.buildOnyxMaterial();break;",
                 "color": "case\"onyxtheblack\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"hsl(240,0%,0%)\"),s.addColorStop(.5,\"hsl(240,0%,19%)\"),s.addColorStop(.5,\"hsl(240,0%,0%)\"),s.addColorStop(1,\"hsl(240, 0%, 31%)\");break;",
                 "func": "t.prototype.buildOnyxMaterial = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:{mapvalue}, specular: 3618615, shininess: 100, bumpScale: .1, color: 1052688, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {carbonEmissiveMap}})},"
+            },
+            {
+                "name": "peonytheflower",
+                "ingame": "Peony",
+                "cheese": "case \"peonytheflower\":this.peonytheflower();break;",
+                "color": "case\"peonytheflower\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"#5713a4\"),s.addColorStop(.5,\"#c22e69\"),s.addColorStop(.5,\"#c22e69\"),s.addColorStop(1,\"#c22e69\");break;",
+                "func": "t.prototype.peonytheflower = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:{mapvalue}, specular: 13840754, shininess: 600, bumpScale: .1, color: 10361423, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {alloyEmissiveMap}})},"
             }
         ],
         "privatecases": [
