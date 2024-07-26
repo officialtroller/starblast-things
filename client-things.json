@@ -271,7 +271,7 @@
                 "ingame": ".gg/JFCXza3tnd",
                 "cheese": "case \"dcmaterial\":this.dcmaterial();break;",
                 "color": "case\"dcmaterial\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"rgb(242 100 114)\"),s.addColorStop(.5,\"rgb(177 62 137)\"),s.addColorStop(.5,\"rgb(177 62 137)\"),s.addColorStop(1,\"rgb(29 168 220)\");break;",
-                "func": "t.prototype.dcmaterial = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:${mapvalue}, specular: 16777215, shininess: 100, bumpScale: 1, color: 16777215, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {carbonEmissiveMap}})},"
+                "func": "t.prototype.dcmaterial = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:{mapvalue}, specular: 16777215, shininess: 100, bumpScale: 1, color: 16777215, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {carbonEmissiveMap}})},"
             },
             {
                 "name": "fullcalor",
