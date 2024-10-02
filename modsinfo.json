@@ -24,7 +24,7 @@
             "max_enter_players": 14,
             "max_enter_time": 72000,
             "version": "1.1",
-            "active": false,
+            "active": true,
             "new": true,
             "active_duration": 4,
             "featured": true,
