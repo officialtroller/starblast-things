@@ -237,6 +237,18 @@
                     "ingame": "X-72"
                 },
                 {
+                    "identifier": "Nickwe",
+                    "name": "korlix_pink",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/refs/heads/main/ecps/korlix_pink.png",
+                    "ingame": "Korlix Pink"
+                },
+                {
+                    "identifier": "Nickwe",
+                    "name": "korlix_red",
+                    "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/refs/heads/main/ecps/korlix_red.png",
+                    "ingame": "Korlix Red"
+                },
+                {
                     "identifier": "adwianUwU",
                     "name": "adrian",
                     "icon": "https://raw.githubusercontent.com/officialtroller/starblast-things/main/ecps/adrian.png",
