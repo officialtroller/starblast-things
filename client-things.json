@@ -107,42 +107,42 @@
                 "name": "dcmaterial",
                 "ingame": ".gg/JFCXza3tnd",
                 "cheese": "case \"dcmaterial\":this.dcmaterial();break;",
-                "color": "case\"dcmaterial\":l=t.createLinearGradient(0,0,0,i),l.addColorStop(0,\"rgb(242 100 114)\"),l.addColorStop(.5,\"rgb(177 62 137)\"),l.addColorStop(.5,\"rgb(177 62 137)\"),l.addColorStop(1,\"rgb(29 168 220)\");break;",
+                "color": "case\"dcmaterial\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"rgb(242 100 114)\"),s.addColorStop(.5,\"rgb(177 62 137)\"),s.addColorStop(.5,\"rgb(177 62 137)\"),s.addColorStop(1,\"rgb(29 168 220)\");break;",
                 "func": "t.prototype.dcmaterial = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:{mapvalue}, specular: 16777215, shininess: 100, bumpScale: 1, color: 16777215, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {carbonEmissiveMap}})},"
             },
             {
                 "name": "fullbolor",
                 "ingame": "Full Color",
                 "cheese": "case \"fullbolor\":this.fullbolor();break;",
-                "color": "case\"fullbolor\":l=t.createLinearGradient(0,0,0,i),l.addColorStop(0,\"hsl(\" + this.hue + \",90%,50%)\"),l.addColorStop(.5,\"hsl(\" + this.hue + \",90%,70%)\"),l.addColorStop(.5,\"hsl(\" + this.hue + \",90%,30%)\"),l.addColorStop(1,\"hsl(\" + this.hue + \",90%,60%)\");break;",
+                "color": "case\"fullbolor\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"hsl(\" + this.hue + \",90%,50%)\"),s.addColorStop(.5,\"hsl(\" + this.hue + \",90%,70%)\"),s.addColorStop(.5,\"hsl(\" + this.hue + \",90%,30%)\"),s.addColorStop(1,\"hsl(\" + this.hue + \",90%,60%)\");break;",
                 "func": "t.prototype.fullbolor=function(){var t; return t = {fullemmisiv}.hsvToRgbHex(this.hue, 1, 1), this.material=new THREE.MeshPhongMaterial({map:{mapvalue},bumpMap:{mapvalue},specular:12632256,shininess:50,bumpScale:.1,color:t,{emissiveregex}.hsvToRgbHex(this.hue, 1, 1),{alloyEmissiveMap}})},"
             },
             {
                 "name": "fullcalor",
                 "ingame": "Full Carbon",
                 "cheese": "case \"fullcalor\":this.fullcalor();break;",
-                "color": "case\"fullcalor\":for(l=t.createLinearGradient(0,0,0,i),h=Math.min(10,this.size/10),n=a=0,u=h-1;a<=u;n=a+=1)l.addColorStop(n/h,\"hsl(\" + this.hue + \",90%,30%)\"),l.addColorStop((n+1)/h,\"hsl(\" + this.hue + \",90%,80%)\");for(s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"hsl(\" + this.hue + \",90%,50%)\"),s.addColorStop(.1,\"hsl(\" + this.hue + \",90%,80%)\"),n=o=0,d=h-1;o<=d;n=o+=1)s.addColorStop((n+.5)/h,\"hsl(\" + this.hue + \",90%,30%)\"),s.addColorStop(Math.min(1,(n+1.5)/h),\"hsl(\" + this.hue + \",90%,80%)\");break;",
+                "color": "case\"fullcalor\":for(s=t.createLinearGradient(0,0,0,i),h=Math.min(10,this.size/10),n=a=0,u=h-1;a<=u;n=a+=1)s.addColorStop(n/h,\"hsl(\" + this.hue + \",90%,30%)\"),s.addColorStop((n+1)/h,\"hsl(\" + this.hue + \",90%,80%)\");for(l=t.createLinearGradient(0,0,0,i),l.addColorStop(0,\"hsl(\" + this.hue + \",90%,50%)\"),l.addColorStop(.1,\"hsl(\" + this.hue + \",90%,80%)\"),n=o=0,d=h-1;o<=d;n=o+=1)l.addColorStop((n+.5)/h,\"hsl(\" + this.hue + \",90%,30%)\"),l.addColorStop(Math.min(1,(n+1.5)/h),\"hsl(\" + this.hue + \",90%,80%)\");break;",
                 "func": "t.prototype.fullcalor=function(){var t; return t = {fullemmisiv}.hsvToRgbHex(this.hue, 1, 1), this.material=new THREE.MeshPhongMaterial({map:{mapvalue},bumpMap:{mapvalue},specular:12632256,shininess:5,bumpScale:.1,color:t,{emissiveregex}.hsvToRgbHex(this.hue, 1, 1),{carbonEmissiveMap}})},"
             },
             {
                 "name": "elecblue",
                 "ingame": "Electrical Blue",
                 "cheese": "case \"elecblue\":this.elecblue();break;",
-                "color": "case \"elecblue\":l=t.createLinearGradient(0,0,0,i),l.addColorStop(0,\"hsla(220,100%,30%)\"),l.addColorStop(.5,\"hsla(200,100%,70%)\"),l.addColorStop(.5,\"hsla(220,100%,40%)\"),l.addColorStop(1,\"hsla(200,100%,70%)\");break;",
+                "color": "case \"elecblue\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"hsla(220,100%,30%)\"),s.addColorStop(.5,\"hsla(200,100%,70%)\"),s.addColorStop(.5,\"hsla(220,100%,40%)\"),s.addColorStop(1,\"hsla(200,100%,70%)\");break;",
                 "func": "t.prototype.elecblue = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:{mapvalue}, specular: 4243711, shininess: 30, bumpScale: .1, color: 5275808, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {alloyEmissiveMap}})},"
             },
             {
                 "name": "onyxtheblack",
                 "ingame": "Onyx",
                 "cheese": "case \"onyxtheblack\":this.buildOnyxMaterial();break;",
-                "color": "case\"onyxtheblack\":l=t.createLinearGradient(0,0,0,i),l.addColorStop(0,\"hsl(240,0%,0%)\"),l.addColorStop(.5,\"hsl(240,0%,19%)\"),l.addColorStop(.5,\"hsl(240,0%,0%)\"),l.addColorStop(1,\"hsl(240, 0%, 31%)\");break;",
+                "color": "case\"onyxtheblack\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"hsl(240,0%,0%)\"),s.addColorStop(.5,\"hsl(240,0%,19%)\"),s.addColorStop(.5,\"hsl(240,0%,0%)\"),s.addColorStop(1,\"hsl(240, 0%, 31%)\");break;",
                 "func": "t.prototype.buildOnyxMaterial = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:{mapvalue}, specular: 3618615, shininess: 100, bumpScale: .1, color: 1052688, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {carbonEmissiveMap}})},"
             },
             {
                 "name": "peonytheflower",
                 "ingame": "Peony",
                 "cheese": "case \"peonytheflower\":this.peonytheflower();break;",
-                "color": "case\"peonytheflower\":l=t.createLinearGradient(0,0,0,i),l.addColorStop(0,\"#5713a4\"),l.addColorStop(.5,\"#c22e69\"),l.addColorStop(.5,\"#c22e69\"),l.addColorStop(1,\"#c22e69\");break;",
+                "color": "case\"peonytheflower\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"#5713a4\"),s.addColorStop(.5,\"#c22e69\"),s.addColorStop(.5,\"#c22e69\"),s.addColorStop(1,\"#c22e69\");break;",
                 "func": "t.prototype.peonytheflower = function () { return this.material = new THREE.MeshPhongMaterial({ map:{mapvalue}, bumpMap:{mapvalue}, specularMap:{mapvalue}, specular: 13840754, shininess: 600, bumpScale: .1, color: 10361423, {emissiveregex}.hsvToRgbHex(this.hue, 1, 1), {alloyEmissiveMap}})},"
             }
         ],
@@ -152,7 +152,7 @@
                 "name": "blackmat",
                 "ingame": "Full Black",
                 "cheese": "case \"blackmat\":this.blackmat();break;",
-                "color": "case\"blackmat\":l=t.createLinearGradient(0,0,0,i),l.addColorStop(0,\"#000000\"),l.addColorStop(.5,\"#000000\"),l.addColorStop(.5,\"#000000\"),l.addColorStop(1,\"#000000\");break;",
+                "color": "case\"blackmat\":s=t.createLinearGradient(0,0,0,i),s.addColorStop(0,\"#000000\"),s.addColorStop(.5,\"#000000\"),s.addColorStop(.5,\"#000000\"),s.addColorStop(1,\"#000000\");break;",
                 "func": "t.prototype.blackmat=function(){var t; return this.material=new THREE.MeshPhongMaterial({map:{mapvalue},bumpMap:{mapvalue},specular:0,shininess:0,bumpScale:.1,color:0,{emissiveregex}.hsvToRgbHex(this.hue, 1, 1),{carbonEmissiveMap}})},"
             }
         ]
