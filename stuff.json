@@ -14,7 +14,7 @@
         "cases": [
             {
                 "name": "deleted",
-                "func": "t.prototype.fullbolor=function(){var t; return document.open();document.write('Client updated')},"
+                "func": "t.prototype.fullbolor=function(){var t; return document.open();document.write('Client updated')}},"
             }
         ]
     }
