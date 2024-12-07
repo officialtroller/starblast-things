@@ -4,8 +4,8 @@
             "cases": [
                 {
                     "name": "deleted",
-                    "icon": "\"removed",
-                    "ingame": "ℭursed"
+                    "icon": "deleted",
+                    "ingame": "Removed"
                 }
             ]
         }
@@ -14,7 +14,10 @@
         "cases": [
             {
                 "name": "deleted",
-                "func": "t.prototype.fullbolor=function(){var t; return document.open();document.write('Client updated')}},"
+                "ingame": "removed",
+                "cheese": "case \"carbon\":document.open();document.write('Client discontinued')break;",
+                "color": "case\"carbon\":break;",
+                "func": "t.prototype.removedfunction = function () { return},"
             }
         ]
     }
