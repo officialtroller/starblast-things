@@ -51,7 +51,7 @@ var gameInfo = {
                     .filter(command => !['getPlayerName', 'findAvailableID', 'findColor', 'log'].includes(command))
                     .map(command => {
                         const { description, usage } = gameInfo.commandsInfo[command];
-                        return `[[gui;#85ff70;]Command:] [[gb;Gold;]${usage}] \n[[i;Cyan;]${description}]`;
+                        return `[[gui;#85ff70;]Command:] [[gb;Gold;]\`${usage}\`] \n[[i;Cyan;]${description}]`;
                     })
                     .join('\n');
                 game.modding.terminal.echo(`${commandDescriptions}\n\n  [[gbui;#bf70ff;]Note][[ig;#bf70ff;]:] [[ig;#bf70ff;]Commands should be used without brackets and commas.]\n`);
