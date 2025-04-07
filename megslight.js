@@ -1,3 +1,10 @@
+/*
+modified by official_troller for personal use
+i do not take any credit for this mod, all the credit goes to Megalodon and his team.
+selling or redistributing this mod is strictly prohibited.
+use the original version instead: https://github.com/TheGreatMegalodon/Megalodon-s-dueling-code/blob/main/Megs%20Dueling%20Light.js
+*/
+
 var gameInfo = {
     Copyright: '©Megalodon 2023-2024',
     Version: 'v1.2.1',
