@@ -685,51 +685,17 @@ chelp = funct => {
 };
 
 showShipIDs = () => {
-    let shipList = '**' + ' '.repeat(~~(ECHO_SPAN / 2 - 'Ship list:'.length / 2)) + 'Ship list:' + '**\n';
-    shipList += '**' + ' '.repeat(~~(ECHO_SPAN / 2 - '|'.length / 2) - Array.from('Ship name').length) + 'Ship name ' + '|' + ' Ship ID' + '**\n';
+    let shipList = 'Ship list:\n';
+    shipList += 'Ship name ' + '|' + ' Ship ID' + '\n';
     let firstPart = true;
     let secondPart = false
     for (let key of Object.keys(SHIPS['vanilla'])) {
         let left = `${SHIPS['vanilla'][key].name} `;
         let right = ` ${key}`;
         let spacing = ' '.repeat(~~(ECHO_SPAN / 2 - '|'.length / 2) - Array.from(left).length);
-        shipList += '**' + spacing + '**' + left + '|' + right + '\n';
-
-        if (parseInt(key) === 406) {
-            game.modding.terminal.echo('!bot ' + shipList.trimEnd());
-            shipList = '';
-            firstPart = false;
-            break;
-        }
+        shipList +=left + '|' + right + '\n';
     }
-
-    if (!firstPart && !secondPart) {
-        for (let key of Object.keys(SHIPS['vanilla'])) {
-            if (parseInt(key) > 406) {
-                let left = `${SHIPS['vanilla'][key].name} `;
-                let right = ` ${key}`;
-                let spacing = ' '.repeat(~~(ECHO_SPAN / 2 - '|'.length / 2) - Array.from(left).length);
-                shipList += '**' + spacing + '**' + left + '|' + right + '\n';
-                if (parseInt(key) === 608) {
-                    game.modding.terminal.echo('!bot ' + shipList.trimEnd());
-                    shipList = '';
-                    secondPart = true;
-                    break;
-                }
-            }
-        }
-    }
-    if (!firstPart && secondPart) {
-        for (let key of Object.keys(SHIPS['vanilla'])) {
-            if (parseInt(key) > 608) {
-                let left = `${SHIPS['vanilla'][key].name} `;
-                let right = ` ${key}`;
-                let spacing = ' '.repeat(~~(ECHO_SPAN / 2 - '|'.length / 2) - Array.from(left).length);
-                shipList += '**' + spacing + '**' + left + '|' + right + '\n';
-            }
-        }
-        game.modding.terminal.echo('!bot ' + shipList.trimEnd());
-    }
+    game.modding.terminal.echo('!bot ' + shipList.trimEnd());
 };
 
 showIDs = function () {
