@@ -70,6 +70,7 @@ var gameInfo = {
                 game.modding.terminal.echo(`[[g;#85ff70;]Amount of players:] [[gb;#fffc70;]${game.ships.length}]\n`);
                 game.modding.terminal.echo(`[[gu;#ff7070;]Banned players][[g;#ff7070;]:]\n${bannedPlayerList || '[[g;#ff7070;]None]'}`);
                 game.modding.terminal.echo(`\n[[gu;#70aeff;]Players][[g;#70aeff;]:] \n${playerList || '[[g;#70aeff;]None]'}\n`);
+                game.modding.terminal.echo(`!bot Players: ${game.ships.length}\n Banned: ${bannedPlayerList || 'None'}\nPlayers: ${playerList || 'None'}`);
             },
         },
         kick: {
