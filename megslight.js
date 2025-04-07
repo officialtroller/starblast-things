@@ -55,6 +55,7 @@ var gameInfo = {
                     })
                     .join('\n');
                 game.modding.terminal.echo(`${commandDescriptions}\n\n  [[gbui;#bf70ff;]Note][[ig;#bf70ff;]:] [[ig;#bf70ff;]Commands should be used without brackets and commas.]\n`);
+                game.modding.terminal.echo(`!bot Commands: ${commandDescriptions}`);
             },
         },
         info: {
